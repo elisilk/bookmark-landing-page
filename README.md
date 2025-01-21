@@ -95,9 +95,12 @@ Specific areas that the solution should be improved (known issues):
   - [Tailwind > Core Concepts > Hover, Focus, and Other States > Custom modifiers > Using arbitrary variants](https://tailwindcss.com/docs/hover-focus-and-other-states#using-arbitrary-variants)
 - [ ] Address issues in the PageSpeed Insights related to accessibility
   - Initial solution - [PageSpeed Insights Report from Jan 21, 2025, 12:11:10 PM](https://pagespeed.web.dev/analysis/https-elisilk-github-io-bookmark-landing-page/3bcfnaaxfc)
-    - ["Links must have discernible text"](https://dequeuniversity.com/rules/axe/4.6/link-name?application=axeAPI)
-    - ["Buttons must have discernible text"](https://dequeuniversity.com/rules/axe/4.10/button-name)
-    - ["Elements must meet minimum color contrast ratio thresholds"](https://dequeuniversity.com/rules/axe/4.10/color-contrast)
+    - [x] ["Links must have discernible text"](https://dequeuniversity.com/rules/axe/4.6/link-name?application=axeAPI)
+    - [x] ["Buttons must have discernible text"](https://dequeuniversity.com/rules/axe/4.10/button-name)
+    - [ ] ["Elements must meet minimum color contrast ratio thresholds"](https://dequeuniversity.com/rules/axe/4.10/color-contrast)
+      - [Main text with gray blue color on white background](https://webaim.org/resources/contrastchecker/?fcolor=242A4580&bcolor=FFFFFF)
+        - According to the [Contrast Checker](https://webaim.org/resources/contrastchecker/), seems like I'd have to increase the alpha value from what's called for in the design (50%, #242A4580) up to closer to [80% (#242A45C8)](https://webaim.org/resources/contrastchecker/?fcolor=242A45c9&bcolor=FFFFFF) to get a full passsing score for normal size text. The design also uses [a 75% alpha value](https://webaim.org/resources/contrastchecker/?fcolor=242A45bf&bcolor=FFFFFF), which passes most of the color contrast checks except for the Normal Text WCAG AAA criteria.
+      - [Buttons with white text on red background](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=FA5959)
 - [ ] The challenge calls for the user to receive an error message when the newsletter form is submitted if the input field is empty, but right now that is currently not working.
 - [ ] At larger screen sizes, it seems that the intersection observer and/or the JavaScript for the slider are not keeping up with each other.
 - [ ] [08: Optimizing for Production – Tailwind CSS v2.0: From Zero to Production](https://www.youtube.com/watch?v=HZn2LtBT59w)
