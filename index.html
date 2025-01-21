@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
 
+    <link rel="preload" href="fonts/Rubik-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Rubik-500.woff2" as="font" type="font/woff2" crossorigin>
+
     <link href="style/output.css" rel="stylesheet">
     <script defer src="./script.js"></script>
 
@@ -34,7 +37,7 @@
 
     <header class="group flex items-center justify-between h-[105px] mx-auto px-8 max-w-[calc(32px*2+1104px)] aria-expanded:bg-dark-gray/95 md:h-[136px] md:bg-transparent aria-expanded:md:bg-transparent" id="header" aria-expanded="false">
 
-      <button class="z-20 p-2 -mr-2 fill-dark-gray group-aria-expanded:fill-white focus:outline-none hover:fill-red focus:ring-2 focus:ring-dark-gray focus:ring-offset-transparent hover:focus:ring-red group-aria-expanded:focus:ring-white group-aria-expanded:hover:fill-red group-aria-expanded:hover:ring-red group-aria-expanded:hover:focus:ring-red md:hidden" id="nav-menu-control" aria-controls="primary-nav" aria-haspopup="true">
+      <button class="z-20 p-2 -mr-2 fill-dark-gray group-aria-expanded:fill-white focus:outline-none hover:fill-red focus:ring-2 focus:ring-dark-gray focus:ring-offset-transparent hover:focus:ring-red group-aria-expanded:focus:ring-white group-aria-expanded:hover:fill-red group-aria-expanded:hover:ring-red group-aria-expanded:hover:focus:ring-red md:hidden" id="nav-menu-control" aria-controls="primary-nav" aria-haspopup="true" aria-label="Mobile navigation control">
         <svg class="block group-aria-expanded:hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill-rule="evenodd" d="M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z"/></svg>
         <svg class="hidden group-aria-expanded:block" xmlns="http://www.w3.org/2000/svg" width="16" height="15"><path fill-rule="evenodd" d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"/></svg>
       </button>

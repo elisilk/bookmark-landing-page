@@ -73,7 +73,7 @@ Here are some of the key resources I used:
   - [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) - I have been thinking about Interaction Observers for a little while, and I finally got around to implementing one in this solution. I use it to look for which of the slider slides is in view and then update the slider control buttons accordingly. I will definitely want to come back to this more, especially in thinking about more [scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations) and [all the possibilities for that](https://scroll-driven-animations.style/).
 - FAQ component
   - [`<details`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) - I love using this element for accordion components rather then building something from scratch.
-    - [How to style the <details> tag when open using Tailwind]() - And then learning how to utilize Tailwind specifically for the `details` element [like this](https://play.tailwindcss.com/UjxLorKs1S).
+    - [How to style the `<details>` tag when open using Tailwind](https://stackoverflow.com/questions/69993644/how-to-style-the-details-tag-when-open-using-tailwind) - And then learning how to utilize Tailwind specifically for the `details` element [like this](https://play.tailwindcss.com/UjxLorKs1S).
 - Contact form component
   - [Floating Labels with Tailwind CSS](https://www.youtube.com/watch?v=nJzKi6oIvBA) - What a great video that helped me learn about Tailwind more generally, and helped me put in some cool effects and nice UI practice for the email form in this challenge.
   - [Is it possible to remove the focus from a text input when a page loads?](https://stackoverflow.com/questions/4276754/is-it-possible-to-remove-the-focus-from-a-text-input-when-a-page-loads) - In a previous solution, I looked into how to utilizie the `blur()` method after a form was submitted. I like this solution of just blurring whatever is the active element (i.e., `document.activeElement.blur();`); Very nice!
@@ -82,7 +82,7 @@ Here are some of the key resources I used:
   - [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
     - [Adding Custom Validation to a Form with TailwindCSS](https://dev.to/deyemiobaa/adding-custom-validation-to-a-form-with-tailwindcss-1e7d) - Although I ended up moving away from this particular kind of implementation, this did help me get started with the form validation and connecting to Tailwind.
   - EXTRA: Dialog component to fully implement the frontend experience for the contact form (even though not called for in the design spec)
-    - [`<dialog>`: The Dialog element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) - I can't decide which element I like better, this one or the `<details>` element. Both are great for common UI components and I'm so thankful they are available.
+    - [`<dialog>`: The Dialog element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) - I can't decide which element I like better, this one or the `<details>` element. Both are great for common UI components and I'm so thankful they are both available. Okay, I can't decide. I love them both equally. :love_letter:
     - [Tailwind > Dialog backdrops](https://tailwindcss.com/docs/hover-focus-and-other-states#dialog-backdrops)
   - [HTMLDialogElement: close event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event)
 
@@ -96,6 +96,8 @@ Specific areas that the solution should be improved (known issues):
 - [ ] Address issues in the PageSpeed Insights related to accessibility
   - Initial solution - [PageSpeed Insights Report from Jan 21, 2025, 12:11:10 PM](https://pagespeed.web.dev/analysis/https-elisilk-github-io-bookmark-landing-page/3bcfnaaxfc)
     - ["Links must have discernible text"](https://dequeuniversity.com/rules/axe/4.6/link-name?application=axeAPI)
+    - ["Buttons must have discernible text"](https://dequeuniversity.com/rules/axe/4.10/button-name)
+    - ["Elements must meet minimum color contrast ratio thresholds"](https://dequeuniversity.com/rules/axe/4.10/color-contrast)
 - [ ] The challenge calls for the user to receive an error message when the newsletter form is submitted if the input field is empty, but right now that is currently not working.
 - [ ] At larger screen sizes, it seems that the intersection observer and/or the JavaScript for the slider are not keeping up with each other.
 - [ ] [08: Optimizing for Production – Tailwind CSS v2.0: From Zero to Production](https://www.youtube.com/watch?v=HZn2LtBT59w)
