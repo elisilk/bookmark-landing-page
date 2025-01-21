@@ -90,9 +90,16 @@ Here are some of the key resources I used:
 
 Specific areas that the solution should be improved (known issues):
 
-- The challenge calls for the user to receive an error message when the newsletter form is submitted if the input field is empty, but right now that is currently not working.
-- At larger screen sizes, it seems that the intersection observer and/or the JavaScript for the slider are not keeping up with each other.
-- [08: Optimizing for Production – Tailwind CSS v2.0: From Zero to Production](https://www.youtube.com/watch?v=HZn2LtBT59w)
+- [x] In Safari on Mac OS, the details summary has the original marker (along with the added SVG marker), and the text seems to be centered. Possibly those two issues are related because the flex container has a `justify-between` setting.
+  - [[Feature/Question] Does Tailwind support the html tag <details> ? #924](https://github.com/tailwindlabs/tailwindcss/issues/924)
+  - [Tailwind > Core Concepts > Hover, Focus, and Other States > Custome modifiers > Using arbitrary variants](https://tailwindcss.com/docs/hover-focus-and-other-states#using-arbitrary-variants)
+- [] Address issues in the PageSpeed Insights related to accessibility
+  - Initial solution - [PageSpeed Insights Report from Jan 21, 2025, 12:11:10 PM](https://pagespeed.web.dev/analysis/https-elisilk-github-io-bookmark-landing-page/3bcfnaaxfc)
+- [] The challenge calls for the user to receive an error message when the newsletter form is submitted if the input field is empty, but right now that is currently not working.
+- [] At larger screen sizes, it seems that the intersection observer and/or the JavaScript for the slider are not keeping up with each other.
+- [] [08: Optimizing for Production – Tailwind CSS v2.0: From Zero to Production](https://www.youtube.com/watch?v=HZn2LtBT59w)
+- [] Consider hiding (or intentionally styling) the scroll bars for the slider.
+- [] Move the "Contact Us" submit button down when the error validation is shown in the smaller viewport views.
 
 More general ideas I want to consider:
 

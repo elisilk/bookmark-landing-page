@@ -1027,10 +1027,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\'\.\/images\/bg-dots\.svg\'\)\] {
-  background-image: url('./images/bg-dots.svg');
-}
-
 .bg-\[url\(\'\.\.\/images\/bg-dots\.svg\'\)\] {
   background-image: url('../images/bg-dots.svg');
 }
@@ -2151,6 +2147,10 @@ video {
     padding-left: 0px;
     padding-right: 0px;
   }
+}
+
+.\[\&\:\:-webkit-details-marker\]\:hidden::-webkit-details-marker {
+  display: none;
 }
 
 .\[\&\:not\(\:-moz-placeholder-shown\)\:not\(\:focus\)\:invalid\]\:border-red:not(:-moz-placeholder-shown):not(:focus):invalid {
