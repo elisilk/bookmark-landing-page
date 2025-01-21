@@ -59,6 +59,7 @@ Here are some of the key resources I used:
 
 - General Tailwind setup and use
   - [Get started with Tailwind CSS > Installation](https://tailwindcss.com/docs/installation) - The overall amazing documentation starts off great with this very clear explanation of how to get Tailwind up and running in your project. So nice!
+  - [Tailwind > Typography > Font Family](https://tailwindcss.com/docs/font-family) - Especially as relates to [using custom fonts](https://tailwindcss.com/docs/font-family#using-custom-values).
   - [Tailwind > Customization > Configuration](https://tailwindcss.com/docs/configuration) - Definitely did some of this, with fonts, colors, shadows, font sizes, and grid templates. Not sure I used it perfectly as intended (or with all its capabilities), but I definitely found this useful.
   - [Tailwind CSS > Pseudo-elements > Before and after](https://tailwindcss.com/docs/hover-focus-and-other-states#before-and-after) - A nice example that uses a `span` element instead of a pseudo element to add a background behind some text. I modified this example to put the blue rounded pill shapes beind the illustration images, and I think it worked nicely. I also used a similar strategy for the icon error that comes up when the email form is invalid.
   - [Responsive Design](https://tailwindcss.com/docs/responsive-design)
